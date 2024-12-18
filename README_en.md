@@ -77,3 +77,46 @@ The `!English` command will switch the bot's language to English, while `!Рус
 ## License
 This project is distributed under the **MIT License**. You are free to use, modify, and distribute the code with proper attribution.
 
+### What is required to run the project?
+
+1. **Node.js**  
+   - Version: **14.17.0** or later.  
+   - [Download Node.js](https://nodejs.org/).
+
+2. **NPM (Node Package Manager)**  
+   - Comes bundled with Node.js. If it's not installed, you can install it manually.
+
+3. **NPM Dependencies** (automatically installed with `npm install`):
+   - `mineflayer`: The core library for creating Minecraft bots.
+   - `mineflayer-pathfinder`: A plugin for bot navigation and movement.
+   - `minecraft-data`: A library for Minecraft data (used to work with blocks, items, etc.).
+
+4. **Minecraft Java Edition**  
+   - Server version: **1.16.5** (or the version specified in the bot configuration).
+
+5. **A Running Minecraft Server**  
+   - Supported version: **1.16.5**.  
+   - The bot will connect to the server specified in the settings (`host` and `port`).
+
+---
+
+### Installing Dependencies
+
+After downloading the project, open a terminal in the project directory and run the following command:
+
+```bash
+npm install
+```
+
+This command will automatically install all the required libraries specified in `package.json`:
+
+- `mineflayer`
+- `mineflayer-pathfinder`
+- `minecraft-data`
+
+If any dependencies fail to install, you can install them manually by running:
+
+```bash
+npm install mineflayer mineflayer-pathfinder minecraft-data
+```
+
